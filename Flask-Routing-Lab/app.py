@@ -12,9 +12,17 @@ app = Flask(  # Create a flask app
 def index():
     return render_template('home.html')
 
-@app.route('/products')
+@app.route('/products1')
 def product():
-    return render_template('product.html')
+    return render_template('product1.html')
+
+#@app.route('/product/2')
+#def product2():
+  # return render_template('product1.html',name = "football shoes",price = "90")
+
+#@app.route('/product/3')
+#def product3():
+ #  return render_template('product1.html',name = "shoes",price = "90")
 
 
 @app.route('/cart')
