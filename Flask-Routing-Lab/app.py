@@ -14,15 +14,15 @@ def index():
 
 @app.route('/products1')
 def product():
-    return render_template('product1.html')
+    return render_template('product1.html',title= "Running Shoes" , img ="running_shoes.jpeg", price = "90"   )
 
-#@app.route('/product/2')
-#def product2():
-  # return render_template('product1.html',name = "football shoes",price = "90")
+@app.route('/product/2')
+def product2():
+   return render_template('product1.html',title = "football shoes",img="Cleats.jpeg",price = "200")
 
-#@app.route('/product/3')
-#def product3():
- #  return render_template('product1.html',name = "shoes",price = "90")
+@app.route('/product/3')
+def product3():
+   return render_template('product1.html',title = "Formal Shoes",img="Formal.jpeg",price = "100")
 
 
 @app.route('/cart')

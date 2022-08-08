@@ -9,9 +9,10 @@
     <h1>Products Page!</h1>
     <h3>Feel free to look around!</h3>
     <BR><BR><BR><BR><BR><BR>
-    <h4>Running shoes</h4>
-    <a href="/"><img src="static/images/running_shoes.jpeg"></a>
-    <h5>Price " 80$</h5>
+    <h4>{{title}}</h4>
+    <a href="/"><img src="../static/images/{{img}}"/></a>
+    <h5>Price {{price}}</h5>
+    <a href="{{url_for('cart')}}"><button>Cart</button></a>
     </center>
 
 </body>
